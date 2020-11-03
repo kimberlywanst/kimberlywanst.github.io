@@ -1,7 +1,22 @@
 body {
   font-family: "Lato", sans-serif;
+  color: #f3f3f3;
   background-image: url(https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+  padding-top: 55px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 60px;
+}
+
+h1 {
+  padding-top: 20px;
 }

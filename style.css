@@ -19,26 +19,12 @@ body {
 }
 
 .hero {
-  /* background: var(--primary-color); */
-  color: var(--font-color-light);
   height: 100vh;
-  position: relative;
-}
-
-/* Hero background image */
-.hero:before {
-  content: "";
   background: url("https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* Resize to cover entire container */
   background-attachment: fixed; /* Image will not scroll with page */
-  /* z-index: -1; Move behind container content */
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  width: 100%;
-  height: 100%;
 }
 
 .section {
@@ -51,8 +37,9 @@ body {
 
 .section h1 {
   color: var(--font-color-dark);
-  font-family: "Libre Baskerville", serif;
-  font-size: 45px;
+  font-family: "Elsie", cursive;
+  /* font-family: "Libre Baskerville", serif; */
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -66,7 +53,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #777;
-  margin-left: 12px;
+  margin: 0 10px;
 }
 
 footer a:hover {

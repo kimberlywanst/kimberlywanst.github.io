@@ -55,3 +55,21 @@ body {
   font-size: 45px;
   font-weight: 700;
 }
+
+footer {
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #777;
+  margin-left: 12px;
+}
+
+footer a:hover {
+  color: var(--font-color-dark);
+  cursor: pointer;
+}

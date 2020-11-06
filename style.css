@@ -1,7 +1,8 @@
 /* Core style variables */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --font-color: #f2f2f2;
+  --font-color-light: #f2f2f2;
+  --font-color-dark: #254c5f;
 }
 
 * {
@@ -11,21 +12,15 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  color: var(--font-color);
-  line-height: 1.4;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 0 50px;
-  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #777;
+  line-height: 2;
 }
 
 .hero {
   /* background: var(--primary-color); */
-  color: var(--font-color);
+  color: var(--font-color-light);
   height: 100vh;
   position: relative;
 }
@@ -37,14 +32,26 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* Resize to cover entire container */
-
-  z-index: -1; /* Move behind container content */
+  background-attachment: fixed; /* Image will not scroll with page */
+  /* z-index: -1; Move behind container content */
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
 }
 
-.about-me {
+.section {
+  max-width: 960px;
+  margin: auto;
+  padding: 100px 80px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.section h1 {
+  color: var(--font-color-dark);
+  font-family: "Libre Baskerville", serif;
+  font-size: 45px;
+  font-weight: 700;
 }

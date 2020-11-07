@@ -1,8 +1,8 @@
 /* Core style variables */
 :root {
-  --primary-color: rgba(13, 110, 139, 0.75);
-  --font-color-light: #f2f2f2;
-  --font-color-dark: #254c5f;
+  --color-light: #f2f2f2;
+  --color-dark: #254c5f;
+  --font-grey: #777;
 }
 
 * {
@@ -14,8 +14,38 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #777;
+  color: var(--font-grey);
   line-height: 2;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-bar {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li {
+  padding: 0 15px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.nav-bar ul li a:hover {
+  color: #999;
+  cursor: pointer;
 }
 
 .hero {
@@ -28,6 +58,7 @@ body {
 }
 
 .section {
+  width: 90%;
   max-width: 960px;
   margin: auto;
   padding: 100px 80px;
@@ -36,11 +67,21 @@ body {
 }
 
 .section h1 {
-  color: var(--font-color-dark);
+  color: var(--color-dark);
   font-family: "Elsie", cursive;
   /* font-family: "Libre Baskerville", serif; */
   font-size: 50px;
   font-weight: 700;
+}
+
+.section a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-dark);
+  border-bottom: 3px solid #cbe3ef;
+}
+
+.section a:hover {
 }
 
 footer {
@@ -50,13 +91,18 @@ footer {
   padding: 20px;
 }
 
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
 footer a {
   text-decoration: none;
-  color: #777;
+  color: var(--font-grey);
   margin: 0 10px;
 }
 
 footer a:hover {
-  color: var(--font-color-dark);
+  color: var(--color-dark);
   cursor: pointer;
 }

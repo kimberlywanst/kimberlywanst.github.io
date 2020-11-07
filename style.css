@@ -66,8 +66,7 @@ ul {
   text-align: center;
 }
 
-.section h1,
-.form-wrapper h1 {
+h1 {
   color: var(--color-dark);
   font-family: "Elsie", cursive;
   /* font-family: "Libre Baskerville", serif; */

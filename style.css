@@ -169,3 +169,31 @@ footer a:hover {
   color: var(--color-dark-blue);
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .hero {
+    background-attachment: scroll;
+  }
+
+  .section {
+    padding: 60px 40px;
+  }
+
+  .nav-bar .menu-left {
+    font-size: 18px;
+  }
+
+  .nav-bar .menu-right {
+    font-size: 14px;
+  }
+
+  .section h1,
+  .container h1 {
+    font-size: 34px;
+  }
+
+  .form-wrapper {
+    width: 80%;
+    padding: 30px 10px;
+  }
+}

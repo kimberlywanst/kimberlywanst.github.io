@@ -59,8 +59,12 @@ ul {
   cursor: pointer;
 }
 
+.nav-bar ul li a.active-page {
+  color: var(--color-light);
+}
+
 .container {
-  flex-grow: 1;
+  flex-grow: 1; /* pushes footer to bottom of page */
 }
 
 .hero {

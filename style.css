@@ -174,17 +174,17 @@ footer a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .hero {
+@media only screen (min-width: 320px) and (max-width: 480px) {
+  /* .hero {
     background-attachment: scroll;
-  }
+  } */
 
   .section {
-    padding: 60px 40px;
+    padding: 60px 20px;
   }
 
   .nav-bar .menu-left {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .nav-bar .menu-right {
@@ -193,7 +193,35 @@ footer a:hover {
 
   .section h1,
   .container h1 {
-    font-size: 34px;
+    font-size: 30px;
+  }
+
+  .form-wrapper {
+    width: 80%;
+    padding: 30px 10px;
+  }
+}
+
+@media only screen (min-width: 481px) and (max-width: 960px) {
+  /* .hero {
+    background-attachment: scroll;
+  } */
+
+  .section {
+    padding: 60px 40px;
+  }
+
+  .nav-bar .menu-left {
+    font-size: 20px;
+  }
+
+  .nav-bar .menu-right {
+    font-size: 14px;
+  }
+
+  .section h1,
+  .container h1 {
+    font-size: 36px;
   }
 
   .form-wrapper {

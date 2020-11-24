@@ -12,49 +12,63 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Contact Us</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../index.html">
-        <img
-          src="../assets/img/marketing/carousell-logo-title-a0ddd1f542efa5b015fc5406e347370b.svg"
-          style="width: 168px"
-          alt="carousell-logo"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="about-us.html">About Us</a>
-          <a class="nav-link" href="profile.html">Products</a>
-          <a class="nav-link active" href="contact.html">Contact</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Logo</a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link" href="profile.html">Products</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <button type="button" class="btn signup-button">Sign up</button>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="header-wrapper">
+          <h1>Contact Us</h1>
+        </div>
+
+        <div class="form-wrapper">
+          <form method="POST" action="/action_page.php">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" required/>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" required/>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="60" rows="10" required></textarea>
+            </div>
+            <div>
+              <input class="button" type="submit" value="Submit"></input>
+            </div>
+          </form>
         </div>
       </div>
-      <button type="button" class="btn btn-danger">Sell</button>
-    </nav>
-    <div></div>
+
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Logo</a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link" href="profile.html">Products</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

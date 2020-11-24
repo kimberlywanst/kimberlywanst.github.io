@@ -6,324 +6,145 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Carousell</title>
+
+    <title>Website</title>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">
-        <img
-          src="https://mweb-cdn.karousell.com/build/carousell-logo-title-a0ddd1f542efa5b015fc5406e347370b.svg"
-          style="width: 168px"
-          alt="carousell-logo"
-        />
-      </a>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-      <button type="button" class="btn btn-danger">Sell</button>
-    </nav> -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Logo</a>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="assets/img/marketing/carousell-logo-title-a0ddd1f542efa5b015fc5406e347370b.svg"
-          style="width: 168px"
-          alt="carousell-logo"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="pages/about-us.html">About Us</a>
+            <a class="nav-link" href="pages/profile.html">Products</a>
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+        <button type="button" class="btn signup-button">Sign up</button>
+      </nav>
+
+      <div class="container search-bar">
+        <form class="form-inline justify-content-center">
+          <input
+            class="form-control mr-sm-2 w-75"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn my-2 my-sm-0" type="submit">
+            <span class="fas fa-shopping-cart"></span>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <div class="container text-center">
+      <h1 class="hero-heading">Tagline here</h1>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="pages/about-us.html">About Us</a>
-          <a class="nav-link" href="pages/profile.html">Products</a>
-          <a class="nav-link" href="pages/contact.html">Contact</a>
-        </div>
-      </div>
-      <button type="button" class="btn btn-danger">Sell</button>
-    </nav>
-
-    <div class="container carousel-wrapper">
-      <div class="row">
-        <div id="carousel-left" class="col-8">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/img/Carousel/carousel-1.jpeg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/Carousel/carousel-2.jpeg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/Carousel/carousel-3.jpeg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/img/Carousel/carousel-4.jpeg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="assets/img/hero/bailey-zindel-NRQV-hBF10M-unsplash.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/hero/mark-harpur-K2s_YE031CA-unsplash.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/hero/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg"
+              alt="Third slide"
+            />
           </div>
         </div>
-
-        <div class="carousel-right" class="col-4">
-          <img src="assets/img/carousel-right.PNG" class="w-100" alt="..." />
-        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+      <button class="signup-button button-padding">Shop now</button>
     </div>
 
-    <div class="container border explore-wrapper">
-      <h4>Explore Carousell</h4>
+    <div class="container border featured-wrapper">
+      <h2 class="featured-heading">Featured products</h2>
       <div class="row">
         <div class="col">
-          <a href="#"
-            ><figure class="figure">
-              <img
-                src="assets/img/explore-carousell/following.png"
-                class="figure-img img-fluid"
-                alt="following"
-              />
-              <figcaption class="figure-caption text-center">
-                Following
-              </figcaption>
-            </figure></a
-          >
+          <div class="card border-0">
+            <img
+              src="assets/img/featured/daniela-cuevas-t7YycgAoVSw-unsplash.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body card-padding">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
         </div>
-
         <div class="col">
-          <a href="#">
-            <figure class="figure">
-              <img
-                src="assets/img/explore-carousell/cars.png"
-                class="figure-img img-fluid"
-                alt="cars"
-              />
-              <figcaption class="figure-caption text-center">Cars</figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#">
-            <figure class="figure">
-              <img
-                src="assets/img/explore-carousell/property.png"
-                class="figure-img img-fluid"
-                alt="property"
-              />
-              <figcaption class="figure-caption text-center">
-                Property
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#"
-            ><figure class="figure">
-              <img
-                src="assets/img/explore-carousell/home-services.png"
-                class="figure-img img-fluid"
-                alt="home services"
-              />
-              <figcaption class="figure-caption text-center">
-                Home Services
-              </figcaption>
-            </figure></a
-          >
-        </div>
-
-        <div class="col">
-          <a href="#">
-            <figure class="figure">
-              <img
-                src="assets/img/explore-carousell/electronics.png"
-                class="figure-img img-fluid"
-                alt="electronics"
-              />
-              <figcaption class="figure-caption text-center">
-                Electronics
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#"
-            ><figure class="figure">
-              <img
-                src="assets/img/explore-carousell/mobile-phones.png"
-                class="figure-img img-fluid"
-                alt="mobile phones"
-              />
-              <figcaption class="figure-caption text-center">
-                Mobile phones
-              </figcaption>
-            </figure></a
-          >
-        </div>
-
-        <div class="col">
-          <a href="#"
-            ><figure class="figure">
-              <img
-                src="assets/img/explore-carousell/womens-fashion.png"
-                class="figure-img img-fluid"
-                alt="women's fashion"
-              />
-              <figcaption class="figure-caption text-center">
-                Women's fashion
-              </figcaption>
-            </figure></a
-          >
-        </div>
-
-        <div class="col">
-          <a href="#">
-            <figure class="figure">
-              <img
-                src="assets/img/explore-carousell/mens-fashion.png"
-                class="figure-img img-fluid"
-                alt="men's fashion"
-              />
-              <figcaption class="figure-caption text-center">
-                Men's fashion
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="#"
-            ><figure class="figure">
-              <img
-                src="assets/img/explore-carousell/heath-beauty.png"
-                class="figure-img img-fluid"
-                alt="health and beauty"
-              />
-              <figcaption class="figure-caption text-center">
-                Health & beauty
-              </figcaption>
-            </figure></a
-          >
-        </div>
-
-        <div class="col">
-          <a href="#">
-            <figure class="figure">
-              <img
-                src="assets/img/explore-carousell/food-drinks.png"
-                class="figure-img img-fluid"
-                alt="food and drinks"
-              />
-              <figcaption class="figure-caption text-center">
-                Food & drinks
-              </figcaption>
-            </figure>
-          </a>
+          <div class="card border-0">
+            <img
+              src="assets/img/featured/ryan-schroeder-Gg7uKdHFb_c-unsplash.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body card-padding">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container border explore-wrapper">
-      <h4>Fresh Finds</h4>
       <div class="row">
-        <div class="col-lg-3 col-md-6">
+        <div class="col">
           <div class="card border-0">
             <img
-              src="assets/img/5.jpeg"
+              src="assets/img/featured/robert-lukeman-_RBcxo9AU-U-unsplash.jpg"
               class="card-img-top img-fluid"
               alt="..."
             />
@@ -335,40 +156,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col">
           <div class="card border-0">
             <img
-              src="assets/img/2.jpg"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body card-padding">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card border-0">
-            <img
-              src="assets/img/3.jpeg"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body card-padding">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card border-0">
-            <img
-              src="assets/img/7.jpeg"
+              src="assets/img/featured/robert-lukeman-zNN6ubHmruI-unsplash.jpg"
               class="card-img-top img-fluid"
               alt="..."
             />
@@ -384,43 +175,32 @@
     </div>
 
     <footer>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">
-          <img
-            src="assets/img/marketing/carousell-logo-title-a0ddd1f542efa5b015fc5406e347370b.svg"
-            style="width: 168px"
-            alt="carousell-logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="pages/about-us.html">About Us</a>
-            <a class="nav-link" href="pages/profile.html">Products</a>
-            <a class="nav-link" href="pages/contact.html">Contact</a>
-          </div>
-        </div>
+      <nav class="nav-bar">
+        <ul class="menu-left">
+          <li><a href="/">Logo</a></li>
+        </ul>
+
+        <ul class="menu-right">
+          <li><a href="pages/about-us.html">About Us</a></li>
+          <li><a href="pages/profile.html">Products</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
       </nav>
     </footer>
 
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
   </body>
